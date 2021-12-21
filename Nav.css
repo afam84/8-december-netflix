@@ -1,0 +1,120 @@
+.nav {
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  height: 30px;
+  z-index: 1;
+  font-size: 1.4rem;
+
+  /* Animations */
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav__black {
+  background-color: #111;
+}
+.nav__logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}
+.nav__avatar {
+  position: fixed;
+  right: 20px;
+  width: 20px;
+  object-fit: contain;
+}
+
+.notification {
+  position: fixed;
+  padding-left: 75rem;
+  object-fit: contain;
+  width: 20px;
+}
+
+.gift {
+  padding-left: 17rem;
+  width: 20px;
+}
+
+.search {
+  padding-left: 16rem;
+  width: 20px;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav--left,
+.nav--right {
+  display: flex;
+  align-items: center;
+}
+
+.nav--left {
+  margin-left: 1.5vw;
+  height: 100%;
+}
+
+.nav--right {
+  margin-right: 3vw;
+  height: 100%;
+  right: 20px;
+}
+
+.nav--right span {
+  margin-top: -3px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav--right i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav__item {
+  margin-right: 2rem;
+}
+
+.nav--right .nav__item {
+  margin-right: 3vw;
+}
+
+.nav__item:last-child {
+  margin-right: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.35rem;
+  padding-left: 4rem;
+  padding-right: 1rem;
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  color: #ddd;
+}
+
+.nav__link--selected {
+  font-weight: bolder;
+  cursor: inherit;
+  right: 10px;
+}
+
+.nav__link--selected:hover {
+  color: inherit;
+}
